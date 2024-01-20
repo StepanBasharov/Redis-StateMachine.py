@@ -19,3 +19,7 @@ class IStateMachine(ABC):
     def transition_prev(self):
         ...
 
+    @abstractmethod
+    def get_current_state(self):
+        ...
+

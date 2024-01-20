@@ -13,9 +13,13 @@ class State(IState):
             transition_before: IState | None,
             transition_after: IState | None
     ):
+        self.state_id = str(uuid4())
         self.transition_name = name
         self.transition_before = transition_before
         self.transition_after = transition_after
+
+    def __str__(self):
+        return self.state_id
 
 
 class Machine(IStateMachine):
@@ -31,9 +35,17 @@ class Machine(IStateMachine):
         )
         self.transitions = [init_state]
         self.current_state = init_state
+        self.machine_id = str(uuid4())
+        self._set_state_in_redis(init_state.state_id)
 
     def __repr__(self):
-        return self.current_state.transition_name
+        return f"{self.machine_id} - {self.current_state.transition_name}"
+
+    def _set_state_in_redis(self, state_id: str):
+        self.redis_machine.set(self.machine_id, state_id)
+
+    def _get_state_from_redis(self):
+        self.redis_machine.get(self.machine_id)
 
     def add_state(self, state: State) -> None:
         if state.transition_before and state not in self.transitions:
@@ -54,3 +66,6 @@ class Machine(IStateMachine):
             self.current_state = self.current_state.transition_before
         else:
             raise core_exception.InitialStateTransitionException
+
+    def get_current_state(self) -> State:
+        return self.current_state

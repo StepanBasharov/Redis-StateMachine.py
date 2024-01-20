@@ -27,3 +27,7 @@ print(machine)
 machine.transition_prev()
 
 print(machine)
+
+current_state = machine.get_current_state()
+
+print(f"StateID: {current_state}")

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b2f200b-8dca-487d-842a-e6344a1af03a" name="Changes" comment="" />
+    <list default="true" id="3b2f200b-8dca-487d-842a-e6344a1af03a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/machine.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/machine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/examples/simple_state_machine.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/examples/simple_state_machine.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +48,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "examples",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/toor/Redis-StateMachine.py",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +75,7 @@
       <updated>1705678661319</updated>
       <workItem from="1705678666693" duration="1927000" />
       <workItem from="1705709248940" duration="6424000" />
+      <workItem from="1705753512415" duration="1459000" />
     </task>
     <servers />
   </component>
@@ -88,6 +95,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/redis_state_machine_py$simple_state_machine.coverage" NAME="simple_state_machine Coverage Results" MODIFIED="1705753101526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs/examples" />
+    <SUITE FILE_PATH="coverage/Redis_StateMachine_py$simple_state_machine.coverage" NAME="simple_state_machine Coverage Results" MODIFIED="1705753856412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs/examples" />
     <SUITE FILE_PATH="coverage/redis_state_machine_py$machine.coverage" NAME="machine Coverage Results" MODIFIED="1705716944428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
   </component>
 </project>
